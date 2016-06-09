@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="carvajal.autenticador.android.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-feature android:name="android.hardware.usb.host" /> 
+
+    <!-- Autenticador Custom Persmission -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- thermal printer need permission -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+           
+        </activity>
+        <activity
+            android:name=".AutenticacionActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             <intent-filter>
+                <action android:name="com.morpho.android.usb.USB_PERMISSION" />
+            </intent-filter>
+
+            <meta-data android:name="com.morpho.android.usb.USB_PERMISSION"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <!-- Este Activity 'ActivityCapture' se encuentra dentro del jar 'pruebaConceptoBarCode2' -->
+        <activity
+            android:name="carvajal.autenticador.android.code2D.ActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".ProcessActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             <intent-filter>
+                <action android:name="com.morpho.android.usb.USB_PERMISSION" />
+            </intent-filter>
+
+            <meta-data android:name="com.morpho.android.usb.USB_PERMISSION"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".MorphoActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NovedadAutenticacionActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ElectorYaAutenticadoActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ElectorImpedidoActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConfiguracionActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".DiagnosticoActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.morpho.android.usb.USB_PERMISSION" />
+            </intent-filter>
+
+            <meta-data android:name="com.morpho.android.usb.USB_PERMISSION"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".ConfiguracionFormActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReporteActivity"
+            android:label="@string/title_activity_autenticacion"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

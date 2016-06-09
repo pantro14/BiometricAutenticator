@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fondo_configuracion"
+    tools:context=".ConfiguracionActivity" >
+  <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="3dp"
+         android:orientation="vertical" >
+
+          <TextView
+                android:id="@+id/lbl_fecha_conf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/texto_fecha"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewTitulo1"
+        style="@style/TituloConfiguracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="100dp"
+        android:text="@string/titulo_configuracion" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTitulo1"
+        android:layout_below="@+id/textViewTitulo1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:paddingTop="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonDiagnostico"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_boton_diagnostico"
+                android:onClick="iniciarDiagnostico"
+                android:padding="15dip" />
+
+            <TextView
+                android:id="@+id/textDiagnostico"
+                style="@style/TextoConfiguracion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:text="@string/texto_diagnostico"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+        	android:id="@+id/layoutBtnConfiguracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonEstacion"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ic_boton_estacion"
+                android:onClick="configurarEstacion"
+                android:padding="15dip" />
+
+            <TextView
+                android:layout_marginTop="21dp"
+                android:id="@+id/textEstacion"
+                style="@style/TextoConfiguracion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:textSize="18sp"
+                android:text="@string/texto_estacion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonBackup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ic_boton_backup"
+                android:onClick="generarBackup"
+                android:padding="15dip" />
+
+            <TextView
+                android:layout_marginTop="27dp"
+                android:id="@+id/textBackup"
+                style="@style/TextoConfiguracion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:textSize="18sp"
+                android:text="@string/texto_backup" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTitulo2"
+        style="@style/TituloConfiguracionAutenticador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewTitulo1"
+        android:layout_below="@+id/textViewTitulo1"
+        android:text="@string/titulo_configuracion_autenticador" />
+
+</RelativeLayout>

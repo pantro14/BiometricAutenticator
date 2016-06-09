@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        style="@style/Titulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/label_titulo_autenticado_en" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_marginTop="21dp"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewDepartamento"
+                style="@style/Etiquetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_depto" />
+
+            <TextView
+                android:id="@+id/textViewVarDpto"
+                style="@style/Contenido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewMpio"
+                style="@style/Etiquetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_mpio" />
+
+            <TextView
+                android:id="@+id/textViewVarMpio"
+                style="@style/Contenido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewPuesto"
+                style="@style/Etiquetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_puesto" />
+
+            <TextView
+                android:id="@+id/textViewVarPuesto"
+                style="@style/Contenido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:maxLines="4"
+                android:singleLine="false"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewHoraReg"
+                style="@style/Etiquetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_hora_reg" />
+
+            <TextView
+                android:id="@+id/textViewVarHoraReg"
+                style="@style/Contenido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewNoMesa"
+                style="@style/Etiquetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_no_mesa" />
+
+            <TextView
+                android:id="@+id/textViewVarNoMesa"
+                style="@style/Contenido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

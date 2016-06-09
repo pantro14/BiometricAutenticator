@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutenticadorAndroidProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Autenticador Electoral</string>
+    <string name="title_activity_autenticacion">AutenticacionActivity</string>
+    <string name="label_usuario">Usuario</string>
+    <string name="label_password">Contraseña</string> 
+    <string name="label_ingresar">Ingresar</string>
+    <string name="label_sincronizado">Sincronizado: </string>
+    <string name="usuario_operario">operario</string>
+    <string name="usuario_supervisor">supervisor</string>
+    <string name="msg_tittle_salir_app">Confirmación de salida de la aplicación</string>
+    <string name="msg_salir_app">¿Está seguro de salir de la aplicación?</string>
+    <string name="label_numcedula">No. Documento</string>
+    <string name="label_leer_cedula">Leer Código 2D</string>
+    <string name="label_validar_elector">Buscar Elector</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">Aceptar</string>
+    <string name="boton_configurar">Configurar</string>
+    <string name="boton_reporte">Reporte Autenticaciónh</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="label_conectado">Conectado</string>
+    <string name="label_desconectado">Desconectado</string>
+    <string name="label_separador">/</string>
+    <!-- LLave para el SDK de manatee 2D Code VALID TO: 6/3/2015 -->
+    <string name="licence_user_manatee">Carvajal.PDF.Android.EDL</string>
+    <string name="licence_key_manatee">B089E2DAA6DEB814CC1EC5F976A63B447CA540BE8F0BC41712225A64291810B4</string>
+    <!-- FIN  LLave para el SDK de manatee 2D Code -->
+
+
+    <!-- MESAJES -->
+    <string name="M01">Fecha y/u hora no Válida.</string>
+    <string name="M03">Debe ingresar No. Documento.</string>
+    <string name="M08">Usuario y/o Contraseña no válidos.</string>
+    <string name="M10">Elector no se encontró en el censo electoral.</string>
+    <string name="M13">Debe ingresar contraseña del Delegado para autorizar.</string>
+    <string name="M15">No se identifica codigo de barras, intente de nuevo o ingrese No.Documento manualmente.</string>
+    <string name="M14">Debe ingresar Usuario y/o Contraseña.</string>
+    <string name="M16">Esperando huellas sobre el biométrico.</string>
+    <string name="M17">No se pudieron detectar las huellas sobre el biométrico.</string>
+    <string name="M18">Dispositivo USB no se encuentra conectado.</string>
+    <string name="M19">Elector autenticado satisfactoriamente.</string>
+    <string name="M20">Elector ya autenticado. [Nombre del Elector]+[Apellido del Elector]. Autenticado En: [Provincia]+[Municipio]+[Colegio electoral]+[Hora de registro]+[No. de mesa]+ [Indicador de si es o no Jurado].</string>
+    <string name="M21">Contraseña inválida. </string>
+    <string name="M22">En la base de datos no hay huellas registradas para el elector.</string>
+    <string name="M23">Elector no se puede autenticar.</string>
+    <string name="M25">Se presentó un error accediendo al dispositivo de lectura de código 2D, por favor contacte al supervisor.</string>
+    <string name="M26">Se presentó un error accediendo al dispositivo de lectura de huellas, por favor contacte al supervisor.</string>
+    <string name="M27">Se presentó un error al imprimir, por favor contacte al supervisor.</string>
+    <string name="M28">Elector %1$s %2$s.\nRegistrado En:\nProvincia: %3$s \nMunicipio: %4$s \nColegio Electoral: %5$s \nNo. de mesa: %6$d .</string>
+    <string name="M29">No se puede imprimir comprobante porque a este elector se le generó comprobante en dos ocasiones anteriores.</string>
+    <string name="M30">Mientras se realiza esta operación no podrá utilizar ninguna otra funcionalidad del sistema de autenticación electoral ¿Confirma el inicio de este procedimiento?</string>
+    <string name="M31">Se ha detectado error de conexión.</string>
+    <string name="M34">Por favor contacte al supervisor para revisar este dispositivo.</string>
+    <string name="M35">Proceso de diagnóstico de dispositivos cancelado por el usuario.</string>
+    <string name="M36">Diagnóstico de dispositivos finalizado.</string>
+    <string name="M41">Verifíque la configuración del colegio electoral y número de mesa</string>
+    <string name="M42">Censo no encontrado</string>
+    <string name="M43">No se ha detectado medio de almacenamiento externo, el backup se guardará internamente</string>
+    <string name="M44">No se pudo establecer comunicación con %1$s. Por favor contacte al supervisor.</string>
+    <string name="M45">No se puede aceptar este nuevo colegio electoral y mesa porque ya se han hecho los cinco cambios que el sistema puede soportar.</string>
+    <string name="M47">Aún no se ha conectado a una red inalámbrica.</string>
+    <string name="M48">No se recibió respuesta del %1$s. Por favor contacte al supervisor.</string>
+    <string name="M49">La configuración de puesto de votación y número de estación es requerida para que el autenticador electoral pueda operar</string>
+    <string name="M53">No se pudo detectar dispositivo por bluetooth.</string>
+    <string name="lbl_elector_ya_autenticado">¡ Elector ya autenticado !</string>
+    <!-- FIN MENSAJES -->
+
+
+    <!-- NOMBRE ELECCION -->
+
+    <string name="nombre_eleccion">Alcaldias y Gobernaciones 2015</string>
+    <!-- FIN NOMBRE ELECCION -->
+
+
+    <!-- FECHA Y HORA FUNCIONAMIENTO -->
+    <string name="validaHoraDesde">5</string>
+    <string name="validaHoraHasta">23</string>
+    <string name="texto_fecha">Fecha</string>
+    <string name="validaFecha">24–06–2015</string>
+ <!-- D-MM-yyyy -->
+    <!-- FIN FECHA Y HORA FUNCIONAMIENTO -->
+
+
+    <!-- AUTENTICADO EN -->
+
+    <string name="label_titulo_autenticado_en">Autenticado en:</string>
+    <string name="label_depto">Provincia:</string>
+    <string name="label_mpio">Municipio:</string>
+    <string name="label_puesto">Colegio Electoral:</string>
+    <string name="label_hora_reg">Hora de Registro:</string>
+    <string name="label_no_mesa">No. de Mesa:</string>
+    <string name="nombre_depto">Valle del Cauca</string>
+    <string name="nombre_mpio">Santiago de Cali</string>
+    <string name="nombre_puesto">Inst.Educ.Jose Holguin Garcés</string>
+
+    <!-- FIN AUTENTICADO EN -->
+
+
+    <!-- ELECTOR OTRO PUESTO -->
+    <string name="nombre_otro_puesto">I.E. Jose Celestino Mutis</string>
+
+    <!-- FIN ELECTOR OTRO PUESTO -->
+
+
+    <!-- ELECTOR -->
+    <string name="label_titulo_elector">Elector:</string>
+    <string name="label_no_documento">No. Documento:</string>
+    <string name="label_fecha_exp">Fecha de Expedición:</string>
+    <string name="label_nombres">Nombres:</string>
+    <string name="label_apellidos">Apellidos:</string>
+    <string name="label_jurado">Jurado:</string>
+    <string name="label_jurado_si">Si</string>
+    <string name="label_jurado_no">No</string>
+
+    <!-- FIN ELECTOR -->
+
+
+    <!-- DIALOGO AUTORIZACION DELEGADO -->
+    <string name="titulo_dialogo">Contraseña delegado</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <!-- FIN DIALOGO AUTORIZACION DELEGADO -->
+
+
+    <!-- BOTONES -->
+    <string name="label_imprimir">Imprimir Comprobante</string>
+    <string name="label_reintentar">Reintentar</string>
+    <string name="label_aprobar_delegado">Aprobar Delegado</string>
+    <!-- FIN BOTONES -->
+
+
+    <!-- TIPOS AUTENTICACION -->
+    <string name="label_autenticado">Elector autenticado satisfactoriamente</string>
+    <string name="label_no_autenticado">Elector no se puede autenticar</string>
+    <!-- FIN TIPOS AUTENTICACION -->
+
+
+    <!-- UBICACION BASE DE DATOS -->
+    <string name="carpeta_base_de_datos">SQLiteAutDirRepDom/</string>
+    <string name="nombre_base_de_datos">autenticador-db</string>
+    <!-- FIN UBICACION BASE DE DATOS -->
+
+	<!-- UBICACIÓN Y NOMBRE ARCHIVO IP'S DE SERVIDORES -->
+    <string name="carpeta_archivo_ip_servidores">SQLiteAutDirRepDom/</string>
+    <string name="nombre_archivo_ip_servidores">Servidores.txt</string>
+    <!-- UBICACIÓN Y NOMBRE ARCHIVO IP'S DE SERVIDORES -->
+
+    <!-- CONFIG PUESTOS -->
+    <string name="dpto_config">31</string>
+    <string name="mpio_config">001</string>
+    <string name="zona_config">01</string>
+    <string name="puesto_config">02</string>
+    <string name="divipol_config">310010102</string>
+    <string name="dpto_otro_puesto">31</string>
+    <string name="mpio_otro_puesto">001</string>
+    <string name="zona_otro_puesto">01</string>
+    <string name="puesto_otro_puesto">03</string>
+    <!-- FIN CONFIG PUESTOS -->
+
+
+    <!-- TIPOS DE NOVEDADES -->
+    <string name="autenticado">0</string>
+    <string name="no_encontrado">1</string>
+    <string name="en_colegio_electoral_diferente">2</string>
+    <string name="datos_no_coinciden">3</string>
+    <string name="no_se_pudo_autenticar">4</string>
+    <string name="sin_informacion_biometrica">5</string>
+    <string name="no_puso_dedo_para_validacion">6</string>
+    <string name="ya_autenticado">7</string>
+    <string name="duplicado_impreso">8</string>
+    <string name="certificado_impreso">9</string>
+    <string name="intento_reimpresion_comprobante">10</string>
+    <string name="autenticacion_asistida_delegado">11</string>
+    <string name="elector_impedido">12</string>
+    <!-- FIN TIPOS DE NOVEDADES -->
+
+
+    <!-- ROLES -->
+    <string name="rol_supervisor">Supervisor</string>
+    <string name="rol_operario">Operario</string>
+    <!-- FIN ROLES -->
+
+
+    <!-- IDs INTENTS -->
+    <string name="id_perfil">perfil</string>
+    <string name="id_score">score</string>
+    <string name="id_dedo">dedo</string>
+    <string name="id_codigo">codigo</string>
+    <!-- FIN IDs INTENTS -->
+
+
+    <!-- REPORTE -->
+    <string name="label_reporte_autenticaciones">Reporte De\n Autenticaciones</string>
+    <string name="label_imprimir_reporte">Imprimir Aprobados\n Delegado</string>
+    <string name="label_titulo_documento">LISTA DE SUFRAGANTES</string>
+    <string name="label_titulo_eleccion">ELECCIONES PRESIDENCIALES DE LA REPUBLICA DE 2016</string>
+    <string name="label_fecha_eleccion">15 DE MAYO DE 2016</string>
+    <string name="reporte_autenticacion_delegado">-1</string>
+    <string name="reporte_total_autenticacion">-2</string>
+    <string name="nombre_reporte_total_autenticacion">Reporte Consolidado Autenticaciones.pdf</string>
+    <!-- FIN REPORTE -->
+
+
+    <!-- ESTADOS DE CONFIGURACION -->
+    <string name="configuracion_activa">1</string>
+    <string name="configuracion_inactiva">0</string>
+    <!-- FIN ESTADOS DE CONFIGURACION -->
+
+
+    <!-- BACKUP -->
+    <string name="carpeta_temporal_backup">BackupTemp/</string>
+    <string name="carpeta_backup">BackupAutDir/</string>
+    <string name="titulo_dialogo_backup">Progreso Backup</string>
+    <string name="mensaje_backup_ini">Generando Backup</string>
+    <string name="mensaje_backup_fin">Backup Generado</string>
+    <string name="texto_pasos">Actividad: </string>
+    <string name="texto_backups">Generando Backup: </string>
+    <!-- FIN BACKUP -->
+
+
+    <!-- ARCHIVO LOG -->
+    <string name="nombre_archivo_log">autenticador.log</string>
+    <!-- FIN ARCHIVO LOG -->
+
+
+    <!-- SINCRONIZACION -->
+    <string name="novedad_sincronizada">1</string>
+    <string name="novedad_no_sincronizada">0</string>
+    <string name="url_servicio">http://1.1.1.1:9000/Novedades/</string>
+    <string name="metodo_get_test">GetTest</string>
+    <string name="metodo_get_novedad_by_ced">GetNovedadesByCed</string>
+    <string name="metodo_insertar_novedad">SetInsertNov</string>
+    <string name="milisegundos_timeout">2000</string>
+
+    <!-- FIN SINCRONIZACION -->
+
+
+    <!-- CONFIGURACION -->
+    <string name="label_titulo_configuracion">Configuración puesto votación</string>
+    <string name="label_subtitulo_configuracion">Estación - Servidor</string>
+    <string name="label_titulo_configuracion_actual">Configuración Actual</string>
+    <string name="label_estacion">Mesa de votación: </string>
+    <string name="label_servidor">Servidor: </string>
+    <string name="limite_configuraciones">5</string>
+    <string name="prefijo_db">novedades-db-</string>
+    <string name="maximo_estaciones">99</string>
+    <!-- FIN CONFIGURACION -->
+
+
+    <!-- USB -->
+    <string name="ruta_usb">/mnt/usbotg/</string>
+    <!-- FIN USB -->
+    
+    <!-- IMPRESION -->
+    <string name="metodo_imprimir_reporte">PrintFile</string>
+    <string name="metodo_diagnostico_impresora">DxPrinter</string>
+    <!-- FIN IMPRESION -->
+
+</resources>

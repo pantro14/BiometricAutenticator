@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="llamado_imobileJNI">/proc/tca6416</string>
+
+    <string name="impresora_on">0</string>
+    <string name="impresora_off">1</string>
+    <string name="huellero_on">2</string>
+    <string name="huellero_off">3</string>
+    
+    <string name="exitoso">oo</string>
+	
+</resources>

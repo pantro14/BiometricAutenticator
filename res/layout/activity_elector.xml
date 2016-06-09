@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/textViewTituloElector"
+        style="@style/Titulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/label_titulo_elector" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textViewTituloElector"
+        android:layout_marginTop="21dp"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewNoDocumento"
+                style="@style/Etiquetas"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_no_documento" />
+
+            <TextView
+                android:id="@+id/textViewVarNoDoc"
+                style="@style/Contenido"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewFechaExp"
+                style="@style/Etiquetas"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_fecha_exp" />
+
+            <TextView
+                android:id="@+id/textViewVarFechExp"
+                style="@style/Contenido"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewNombres"
+                style="@style/Etiquetas"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nombres" />
+
+            <TextView
+                android:id="@+id/textViewVarNombres"
+                style="@style/Contenido"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:singleLine="false"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewApellidos"
+                style="@style/Etiquetas"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_apellidos" />
+
+            <TextView
+                android:id="@+id/textViewVarApell"
+                style="@style/Contenido"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:singleLine="false"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

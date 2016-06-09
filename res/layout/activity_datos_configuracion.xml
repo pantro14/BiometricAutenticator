@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <TableLayout
+        android:id="@+id/tableLayoutConf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewDepto"
+                style="@style/EtiquetaConfiguracionActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_depto" />
+
+            <Spinner
+                android:id="@+id/spinnerVarDepto"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rounded_spinner" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textViewMpio"
+                style="@style/EtiquetaConfiguracionActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_mpio" />
+
+            <Spinner
+                android:id="@+id/spinnerVarMpio"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rounded_spinner" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textViewPuesto"
+                style="@style/EtiquetaConfiguracionActual"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_puesto" />
+
+            <Spinner
+                android:id="@+id/spinnerVarPuesto"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rounded_spinner" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textViewEstacion"
+                style="@style/EtiquetaConfiguracionActual"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_estacion" />
+
+            <Spinner
+                android:id="@+id/spinnerVarEstacion"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rounded_spinner" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textViewServidor"
+                style="@style/EtiquetaConfiguracionActual"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/label_servidor" />
+
+            <Spinner
+                android:id="@+id/spinnerVarServidor"
+                android:layout_width="250dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rounded_spinner" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tableLayoutConf"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/ic_boton_guardar"
+        android:onClick="guardarConfiguracion"
+        android:padding="15dip" />
+
+</RelativeLayout>

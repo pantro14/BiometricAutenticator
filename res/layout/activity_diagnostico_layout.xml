@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fondo_configuracion"
+    tools:context=".DiagnosticoActivity" >
+ <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="3dp"
+         android:orientation="vertical" >
+
+          <TextView
+                android:id="@+id/lbl_fecha_diag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/texto_fecha"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnCancelarDiagnostico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayoutDiagnostico"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_boton_cancelar"
+        android:onClick="btnCancelarDiagnostico_Click"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/textViewTituloDiagnostico"
+        style="@style/TituloDiagnostico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/titulo_diagnostico" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutDiagnostico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewMensaje"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRowHuellas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/borde_redondeado_gris"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/lbl_diagnostico_huellas"
+                style="@style/EtiquetasDiagnostico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/etiqueta_lector_huellas"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textViewMsjHuellas"
+                style="@style/Contenido"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/espera"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/imageViewHuellas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_correcto"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowCamara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/borde_redondeado_gris"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/lbl_diagnostico_camara"
+                style="@style/EtiquetasDiagnostico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/etiqueta_camara"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textViewMsjCamara"
+                style="@style/Contenido"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/espera"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/imageViewCamara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_correcto"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowRedInalambrica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/borde_redondeado_gris"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/lbl_diagnostico_conexion_inalambrica"
+                style="@style/EtiquetasDiagnostico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/etiqueta_wifi"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textViewMsjWifi"
+                style="@style/Contenido"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/espera"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/imageViewWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_correcto"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowImpresora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/borde_redondeado_gris"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/lbl_diagnostico_impresora"
+                style="@style/EtiquetasDiagnostico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/etiqueta_impresora" />
+
+            <TextView
+                android:id="@+id/textViewMsjImpresora"
+                style="@style/Contenido"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/espera"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/imageViewImpresora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_correcto"
+                android:visibility="gone" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewTituloDiagnosticoDispositivos"
+        style="@style/TituloDiagnosticoDispositivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewTituloDiagnostico"
+        android:layout_below="@+id/textViewTituloDiagnostico"
+        android:text="@string/titulo_diagnostico_dispositivos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewMensaje"
+        style="@style/MensajeDiagnosticoDispositivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTituloDiagnosticoDispositivos"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:text="@string/titulo_inicio_diagnostico"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

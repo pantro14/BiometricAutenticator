@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ETIQUETAS -->
+
+    <string name="titulo_configuracion">Configuración</string>
+    <string name="titulo_configuracion_autenticador">Autenticador</string>
+    <string name="titulo_diagnostico">Diagnóstico de</string>
+    <string name="titulo_diagnostico_dispositivos">Dispositivos</string>
+    <string name="etiqueta_lector_huellas">Lector de Huellas</string>
+    <string name="etiqueta_camara">Cámara</string>
+    <string name="etiqueta_wifi">Conexión a red inalámbrica</string>
+    <string name="etiqueta_impresora">Impresora</string>
+
+    <!-- FIN ETIQUETAS -->
+
+
+    <!-- TEXTOS -->
+
+    <string name="texto_diagnostico">Permite diagnosticar el funcionamiento de los dispositivos de lector de huellas, cámara, conexión a red inalámbrica e impresora.</string>
+    <string name="texto_estacion">Permite configurar el número de la estación que se encuentra trabajando y el lugar de autenticación que tomará el sistema para validar una persona, departamento, municipio y puesto.</string>
+    <string name="texto_backup">Genera backup del sistema en una memoria usb para evitar la pérdida de datos.</string>
+    <!-- FIN TEXTOS -->
+
+
+    <!-- MENSAJES -->
+
+    <string name="espera">.................................. Esperando</string>
+    <!-- FIN MENSAJES -->
+
+
+    <!-- TITULOS MENSAJES -->
+    <string name="titulo_M30">Advertencia</string>
+    <string name="titulo_inicio_diagnostico">Por favor espere un momento mientras se ejecuta el diagnóstico.</string>
+    <string name="titulo_fin_diagnostico">Diagnóstico de dispositivos finalizado.</string>
+
+    <!-- TITULOS MENSAJES -->
+
+
+    <!-- DIAGNOSTICO -->
+
+    <integer name="timer">3000</integer>
+    <!-- FIN DIAGNOSTICO -->
+
+
+    <!-- SINCRONIZACION -->
+
+    <integer name="sync_time_out_ping">5000</integer>
+
+    <!-- COMPROBANTE PRUEBA -->
+
+    <string name="texto_prueba">XXXXXXXXXX</string>
+    <string name="titulo_comprobante_prueba">"PRUEBA"</string>
+
+    <!-- MENSAJES PROGRESS DIALOG -->
+    <string name="diag_impr">Diagnosticando de impresora</string>
+    <string name="titulo_dialogos">Autenticador Electorar</string>
+    <string name="diag_red">Diagnosticando red inalámbrica</string>
+
+    <!-- MENSAJES LOG DIAGNOSTICO -->
+
+    <string name="huellero">HUELLERO</string>
+    <string name="red_inalambrica">RED INALAMBRICA</string>
+    <string name="camara">LECTOR 2D</string>
+    <string name="impresora">IMPRESORA</string>
+    
+    <string name="dispositivo_ok">Dispositivo configurado correctamente</string>
+    
+
+</resources>

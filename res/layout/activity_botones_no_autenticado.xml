@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/buttonReintentar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button"
+        android:padding="15dip"
+        android:onClick="reintentar"
+        android:text="@string/label_reintentar"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonAprobarDelegado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button"
+        android:padding="15dip"
+        android:text="@string/label_aprobar_delegado"
+        android:onClick="buttonAprobarDelegadoImp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="naranja">#FF8200</color>
+     <color name="verde_RD">#2eb71a</color>
+     <color name="negro">#000000</color>
+     <color name="morado">#552a72</color>
+     <color name="azul">#1c5c76</color>
+     <color name="verde">#477605</color>
+     <color name="gris">#808080</color>
+     <color name="rojo">#dd0101</color>
+     <color name="grisOscuroTransparente">#80A3A3A3</color>
+</resources>
